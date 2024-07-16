@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="card-container">
+            <img src="img/leafs.jpg" alt="Picture of ferns" id="card-image">
+            <div id="card-body">
+                <img src="img/odin-lined.png" alt="The Odin Project Logo" id="odin-logo">
+                <p id="odin-text">ODIN</p>
+            </div>
+        </div>
+        <div id="content-container">
+            <div id="content-text">
+                <h1>This is not a real online service! You know you need something like this in real life to help you realize you deepest dreams. Sign up <i>now</i> to get started.<br><br>You <i>know</i> you want to.</h1>                
+            </div>
+            <div id="content-form">
+                <form action="" method="post">
+                    <h1>Let's do this!</h1>
+                    <fieldset>
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" id="first_name" name="user_first_name" required>
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" id="last_name" name="user_last_name" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="user_email" required>
+                        <label for="phone_num">PHONE NUMBER</label>
+                        <input type="number" id="phone_num" name="phone_number" required minlength="10">
+                    </fieldset>
+                    <fieldset>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="user_password" required minlength="8">
+                        <label for="con_password">CONFIRM PASSWORD</label>
+                        <input type="password" id="con_password" required minlength="8">
+                    </fieldset>
+                </form>
+            </div>
+            <div id="button-login">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
