@@ -21,31 +21,47 @@
             </div>
             <div id="content-form">
                 <form action="" method="post">
-                    <h1>Let's do this!</h1>
-                    <fieldset>
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name" name="user_first_name" required>
-                        <label for="last_name">LAST NAME</label>
-                        <input type="text" id="last_name" name="user_last_name" required>
-                    </fieldset>
-                    <fieldset>
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="user_email" required>
-                        <label for="phone_num">PHONE NUMBER</label>
-                        <input type="number" id="phone_num" name="phone_number" required minlength="10">
-                    </fieldset>
-                    <fieldset>
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="user_password" required minlength="8">
-                        <label for="con_password">CONFIRM PASSWORD</label>
-                        <input type="password" id="con_password" required minlength="8">
-                    </fieldset>
+                    <div id="form-div">
+                        <h1>Let's do this!</h1>
+                        <fieldset id="names">
+                            <div id="first-name-div">
+                                <label for="first_name">FIRST NAME</label>
+                                <input type="text" class="input" id="first_name" name="user_first_name" required>
+                            </div>
+                            <div id="last-name-div">
+                                <label for="last_name">LAST NAME</label>
+                                <input type="text" class="input" id="last_name" name="user_last_name" required>
+                            </div>
+                        </fieldset>
+                        <fieldset id="contact">
+                            <div id="email-div">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="user_email" class="input" required>
+                            </div>
+                            <div id="num-div">
+                                <label for="phone_num">PHONE NUMBER</label>
+                                <input type="number" id="phone_num" name="phone_number" class="input" required maxlength="10" minlength="10">
+                            </div>
+                        </fieldset>
+                        <fieldset id="passwords">
+                            <div id="password-div">
+                                <label for="password">PASSWORD</label>
+                                <input type="password" id="password" name="user_password" class="input" required minlength="8">
+                            </div>
+                            <div id="con_password-div">
+                                <label for="con_password">CONFIRM PASSWORD</label>
+                                <input type="password" id="con_password" class="input" required minlength="8">
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="button-login">
+                        <button type="submit" id="create-account">Create Account</button>
+                        <p id="account-text">Already have an account? <a href="" id="login">Log in</a></p>
+                    </div>
                 </form>
-            </div>
-            <div id="button-login">
-
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
